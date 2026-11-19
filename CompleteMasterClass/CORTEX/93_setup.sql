@@ -1,4 +1,16 @@
--- Ingestion >> Load files into Stage
+-- Ingestion >> Add Data
+-- Click Load files into a Stage
+-- In select database, schema and stage:
+-- Select SCHEMA TB_VOC.PUBLIC
+-- Select LOAD_STAGE
+-- path: /raw_pos/order_header
+-- Browse to order_header.csv
+-- Click Upload
+
+-- repeat the above for 
+-- /raw_pos/menu/menu.csv
+-- /raw_pos/truck/truck.csv
+-- /raw_support/truck_reviews/truck_reviews.csv
 
 -- 00_setup_infra.sql
 -- Goal: Create all Snowflake objects (DB, schemas, tables, views, stages).
