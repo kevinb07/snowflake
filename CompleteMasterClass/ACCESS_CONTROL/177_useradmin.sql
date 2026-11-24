@@ -1,0 +1,14 @@
+-- USERADMIN --
+-- create users and create role privileges
+-- manage users and roles created by self
+
+--- User 4 ---
+CREATE USER ben PASSWORD = '123' 
+DEFAULT_ROLE = ACCOUNTADMIN 
+MUST_CHANGE_PASSWORD = TRUE;
+
+GRANT ROLE HR_ADMIN TO USER ben;
+
+SHOW ROLES;
+
+GRANT ROLE HR_ADMIN TO ROLE SYSADMIN;
